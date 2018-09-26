@@ -1,0 +1,58 @@
+{
+  "name": "mern-webpack-template",
+  "version": "1.0.0",
+  "description": "A MERN stack setup with custom React config",
+  "main": "./client/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": {
+      "git@github.com:phavor/minimal-mern-template.git"
+      "git@gitlab.com:boilerplates_and_templates/MERN-stack/minimal-mern-template.git"
+    }
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "mongodb",
+    "boilerplate",
+    "templates"
+  ],
+  "author": "Fayvor George",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "config": "^2.0.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-validator": "^5.3.0",
+    "http-auth": "^3.2.3",
+    "joi": "^13.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.2.13",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.4.0",
+    "react-icons": "^3.0.5",
+    "react-redux": "^5.0.7",
+    "react-modal": "^3.5.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-devtools": "^3.4.1",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
