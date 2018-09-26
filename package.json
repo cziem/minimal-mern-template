@@ -25,9 +25,15 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
     "config": "^2.0.1",
+    "css-loader": "^1.0.0",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-validator": "^5.3.0",
@@ -37,6 +43,8 @@
     "lodash": "^4.17.11",
     "mongoose": "^5.2.13",
     "morgan": "^1.9.1",
+    "node-sass": "^4.9.2",
+    "normalize.css": "^8.0.0",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "prop-types": "^15.6.2",
@@ -50,7 +58,10 @@
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-devtools": "^3.4.1",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "validator": "8.0.0",
+    "webpack": "3.1.0",
+    "webpack-dev-server": "2.5.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
