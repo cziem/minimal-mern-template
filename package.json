@@ -8,10 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": {
-      "git@github.com:phavor/minimal-mern-template.git"
-      "git@gitlab.com:boilerplates_and_templates/MERN-stack/minimal-mern-template.git"
-    }
+    "url": "git@github.com:phavor/minimal-mern-template.git git@gitlab.com:boilerplates_and_templates/MERN-stack/minimal-mern-template.git"
   },
   "keywords": [
     "mern",
