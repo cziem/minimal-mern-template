@@ -4,7 +4,10 @@
   "description": "A MERN stack setup with custom React config",
   "main": "./client/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint client/src",
+    "start": "webpack-dev-server --open --watch --hot",
+    "build": "webpack "
   },
   "repository": {
     "type": "git",
@@ -32,7 +35,6 @@
     "config": "^2.0.1",
     "css-loader": "^1.0.0",
     "dotenv": "^6.0.0",
-    "eslint-config-airbnb": "^17.1.0",
     "express": "^4.16.3",
     "express-validator": "^5.3.0",
     "http-auth": "^3.2.3",
@@ -57,13 +59,17 @@
     "redux": "^4.0.0",
     "redux-devtools": "^3.4.1",
     "redux-logger": "^3.0.6",
+    "sass-loader": "^7.1.0",
     "validator": "8.0.0",
     "webpack": "3.1.0",
     "webpack-dev-server": "2.5.1"
   },
   "devDependencies": {
     "concurrently": "^4.0.1",
-    "eslint": "^5.6.0",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
     "html-webpack-plugin": "^3.2.0",
     "nodemon": "^1.18.4"
