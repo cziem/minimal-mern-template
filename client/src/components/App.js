@@ -28,7 +28,8 @@ export default class App extends Component {
   }
 
   render() {
-    return <main>
+    return (
+      <main>
 				<header>
 					<h2>MERN Stack Boilerplate</h2>
 					<button onClick={this.onClick}>Get Details</button>
@@ -46,6 +47,7 @@ export default class App extends Component {
 							</a>
 						</p>
 					</section>}
-			</main>;
+      </main>
+    );
   }
 }
