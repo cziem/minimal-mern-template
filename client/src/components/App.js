@@ -16,7 +16,6 @@ export default class App extends Component {
       method: 'GET'
     })
       .then((res) => {
-        console.log(res.data)
         this.setState(() => ({
           getDetails: true,
           app_name: res.data.app_name,
