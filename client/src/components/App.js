@@ -3,6 +3,7 @@ import axios from 'axios'
 
 export default class App extends Component {
   state = {
+    getDetails: false,
     app_name: '',
     developer: '',
     aka: '',
@@ -15,34 +16,36 @@ export default class App extends Component {
       method: 'GET'
     })
       .then((res) => {
-        console.log(res)
+        console.log(res.data)
         this.setState(() => ({
-          app_name: res.app_name,
-          developer: res.developer,
-          aka: res.aka,
-          info: res.info
+          getDetails: true,
+          app_name: res.data.app_name,
+          developer: res.data.developer,
+          aka: res.data.aka,
+          info: res.data.info
         }))
     })
   }
 
   render() {
-    return (
-      <main>
-        <header>
-          <h2>MERN Stack Boilerplate</h2>
-          <button
-            onclick={this.onClick}
-          >Get Details
-          </button>
-        </header>
+    return <main>
+				<header>
+					<h2>MERN Stack Boilerplate</h2>
+					<button onClick={this.onClick}>Get Details</button>
+				</header>
 
-        <section>
-          <p>Title: {this.state.app_name}</p>
-          <p>Developer: {this.state.developer} and is known as {this.state.aka}</p>
-          <p>Important: {this.state.info}</p>
-          <p>Link to <a href="github.com/phavor">github</a></p>
-        </section>
-      </main>
-    )
+				{this.state.getDetails && <section>
+						<p>Title: {this.state.app_name}</p>
+						<p>
+							Developer: {this.state.developer} aka {this.state.aka}
+						</p>
+						<p>Important: {this.state.info}</p>
+						<p>
+							Link to <a href="https://github.com/phavor/minimal-mern-template" target="_blank">
+								github
+							</a>
+						</p>
+					</section>}
+			</main>;
   }
 }
