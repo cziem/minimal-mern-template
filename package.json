@@ -67,8 +67,9 @@
     "webpack-dev-server": "2.5.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "concurrently": "^4.0.1",
-    "eslint": "^5.6.1",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",

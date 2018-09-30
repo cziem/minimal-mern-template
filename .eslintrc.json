@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "react/jsx-filename-extension": 0,
+    "semi": "off",
+    "no-undef": "off",
+    "eol-last": "off",
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "comma-dangle": "off",
+    "no-console": "off"
+  },
+  "parser": "babel-eslint"
+}

@@ -15,13 +15,13 @@ export default class App extends Component {
       method: 'GET'
     })
       .then((res) => {
+        console.log(res)
         this.setState(() => ({
           app_name: res.app_name,
           developer: res.developer,
           aka: res.aka,
           info: res.info
         }))
-      .catch(err => document.write(err))
     })
   }
 
