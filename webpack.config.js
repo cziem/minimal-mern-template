@@ -16,7 +16,7 @@ module.exports = {
 			},
 			{
 				test: /\.s?css$/,
-				use: ['style-loader', 'css-loader', 'sass-loader']
+				use: ["style-loader", "css-loader", "sass-loader"]
 			}
 		]
 	},
@@ -25,7 +25,7 @@ module.exports = {
 			template: "./client/public/index.html"
 		})
 	],
-	devtool: "inline-source-map",
+	devtool: "cheap-module-eval-source-map",
 	devServer: {
 		contentBase: path.resolve(__dirname, "dist")
 	}
