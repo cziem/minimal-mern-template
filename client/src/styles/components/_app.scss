@@ -1,0 +1,63 @@
+body 
+{
+  background: $dark;
+  font-family: $fonts;
+}
+
+main 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 40rem;
+}
+
+header
+{
+  background: $bright-orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: $s 0;
+
+  h2 {
+    font-weight: 200;
+    color: lighten($dark, 8);
+    padding-bottom: $m_;
+  }
+
+  button {
+    border: none;
+    background: darken($bright-orange, 15);
+    padding: $m_;
+    width: 80%;
+    border-radius: $xs;
+    border-bottom: darken($bright-orange, 20) 3px solid;
+    cursor: pointer;
+    font-size: $m;
+  }
+}
+
+section
+{
+  color: $foreground;
+  width: 50%;
+  background: $transparent;
+  padding: $m_;
+
+  p {
+    line-height: 2;
+  }
+
+  span {
+    color: $bright-orange;
+  }
+
+  a {
+    color: darken($foreground, 20)
+  }
+}

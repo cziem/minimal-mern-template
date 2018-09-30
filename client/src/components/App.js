@@ -35,12 +35,13 @@ export default class App extends Component {
 					<button onClick={this.onClick}>Get Details</button>
 				</header>
 
-				{this.state.getDetails && <section>
-						<p>Title: {this.state.app_name}</p>
+        {this.state.getDetails &&
+          <section>
+						<p><span>Title:</span> {this.state.app_name}</p>
 						<p>
-							Developer: {this.state.developer} aka {this.state.aka}
+							<span>Developer:</span> {this.state.developer} aka {this.state.aka}
 						</p>
-						<p>Important: {this.state.info}</p>
+						<p><span>Important:</span> {this.state.info}</p>
 						<p>
 							Link to <a href="https://github.com/phavor/minimal-mern-template" target="_blank">
 								github

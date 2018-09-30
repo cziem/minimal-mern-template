@@ -1,6 +1,17 @@
 // colors
-$body: orange;
+$dark: #0e0e0e;
+$bright-orange: #fab028;
+$foreground: #ececec;
+$transparent: rgba(0, 0, 0, 0.2);
 
-body {
-  background: $body;
-}
+// sizing
+$xs: .25rem;
+$s: .5rem;
+$m: 1.2rem;
+$m_: 1.8rem;
+$lg: 2rem;
+$lg_: 2.5rem;
+$broad: 25rem;
+
+// font-family
+$fonts: Helvetica;
